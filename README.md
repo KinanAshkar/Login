@@ -28,22 +28,6 @@ Kurze professionelle Projektbeschreibung.
 
 ### Mobile-Ansichten
 
-<p align="center">
-  <img
-    src="images/mobile-home.png"
-    alt="Mobile Startseite"
-    width="30%"
-  />
-
-  <img
-    src="images/mobile-login.png"
-    alt="Login-Formular auf einem Mobilgerät"
-    width="30%"
-  />
-
-  <img
-    src="images/mobile-menu.png"
-    alt="Mobile Navigation"
-    width="30%"
-  />
-</p>
+| Startseite | Login-Formular | Mobile Navigation |
+|:---:|:---:|:---:|
+| <img src="images/mobile-home.png" alt="Mobile Startseite" width="220"> | <img src="images/mobile-login.png" alt="Login-Formular" width="220"> | <img src="images/mobile-menu.png" alt="Mobile Navigation" width="220"> |
