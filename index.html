@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Responsive login and registration form" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Responsive Login Form</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <a href="#home" class="logo">Nature</a>
+
+      <!-- Mobile Navigation Button -->
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-label="Open navigation menu"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Navigation -->
+      <nav class="navigation" id="primary-navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+
+        <button type="button" class="btn-login-popup">Login</button>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="hero" id="home">
+      <div class="hero-content">
+        <span class="hero-badge">Welcome to Nature</span>
+
+        <h1>Discover a calmer digital experience</h1>
+
+        <p>Sign in to your account or create a new account to get started.</p>
+
+        <button type="button" class="hero-login-button">Get Started</button>
+      </div>
+    </main>
+
+    <!-- Modal Overlay -->
+    <div class="modal-overlay" aria-hidden="true">
+      <!-- Authentication Modal -->
+      <section
+        class="auth-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="login-title"
+      >
+        <!-- Close Button -->
+        <button
+          type="button"
+          class="modal-close"
+          aria-label="Close authentication form"
+        >
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <!-- Login Form -->
+        <div class="form-box login is-active">
+          <h2 id="login-title">Login</h2>
+
+          <p class="form-description">
+            Welcome back! Please enter your information.
+          </p>
+
+          <form class="login-form">
+            <!-- Email -->
+            <div class="input-box">
+              <span class="input-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </span>
+
+              <input
+                type="email"
+                name="loginEmail"
+                id="login-email"
+                placeholder=" "
+                autocomplete="email"
+                required
+              />
+
+              <label for="login-email">Email</label>
+            </div>
+
+            <!-- Password -->
+            <div class="input-box">
+              <span class="input-icon">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+              </span>
+
+              <input
+                type="password"
+                name="loginPassword"
+                id="login-password"
+                placeholder=" "
+                autocomplete="current-password"
+                minlength="6"
+                required
+              />
+
+              <label for="login-password">Password</label>
+
+              <button
+                type="button"
+                class="password-toggle"
+                data-target="login-password"
+                aria-label="Show password"
+              >
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+            </div>
+
+            <!-- Remember / Forgot -->
+            <div class="remember-forgot">
+              <label class="checkbox-label">
+                <input type="checkbox" name="rememberMe" id="remember-me" />
+
+                <span>Remember me</span>
+              </label>
+
+              <a href="#">Forgot password?</a>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="submit-button">Login</button>
+
+            <!-- Switch to Register -->
+            <div class="form-switch">
+              <p>
+                Don't have an account?
+
+                <a href="#" class="register-link"> Register </a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="form-box register" hidden>
+          <h2 id="register-title">Registration</h2>
+
+          <p class="form-description">
+            Create your account in just a few steps.
+          </p>
+
+          <form class="register-form">
+            <!-- Username -->
+            <div class="input-box">
+              <span class="input-icon">
+                <ion-icon name="person-outline"></ion-icon>
+              </span>
+
+              <input
+                type="text"
+                name="username"
+                id="register-username"
+                placeholder=" "
+                autocomplete="username"
+                minlength="3"
+                required
+              />
+
+              <label for="register-username"> Username </label>
+            </div>
+
+            <!-- Email -->
+            <div class="input-box">
+              <span class="input-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </span>
+
+              <input
+                type="email"
+                name="registerEmail"
+                id="register-email"
+                placeholder=" "
+                autocomplete="email"
+                required
+              />
+
+              <label for="register-email">Email</label>
+            </div>
+
+            <!-- Password -->
+            <div class="input-box">
+              <span class="input-icon">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+              </span>
+
+              <input
+                type="password"
+                name="registerPassword"
+                id="register-password"
+                placeholder=" "
+                autocomplete="new-password"
+                minlength="6"
+                required
+              />
+
+              <label for="register-password"> Password </label>
+
+              <button
+                type="button"
+                class="password-toggle"
+                data-target="register-password"
+                aria-label="Show password"
+              >
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+            </div>
+
+            <!-- Terms -->
+            <div class="terms-box">
+              <label class="checkbox-label">
+                <input
+                  type="checkbox"
+                  name="terms"
+                  id="register-terms"
+                  required
+                />
+
+                <span> I agree to the terms &amp; conditions </span>
+              </label>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="submit-button">Register</button>
+
+            <!-- Switch to Login -->
+            <div class="form-switch">
+              <p>
+                Already have an account?
+
+                <a href="#" class="login-link"> Login </a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Form Message -->
+        <p class="form-message" role="status" aria-live="polite"></p>
+      </section>
+    </div>
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+  </body>
+</html>
