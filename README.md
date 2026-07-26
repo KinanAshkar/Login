@@ -30,4 +30,4 @@ Kurze professionelle Projektbeschreibung.
 
 | Startseite | Login-Formular | Mobile Navigation |
 |:---:|:---:|:---:|
-| <img src="images/mobile-home.png" alt="Mobile Startseite" width="252"> | <img src="images/mobile-login.png" alt="Login-Formular" width="252"> | <img src="images/mobile-menu.png" alt="Mobile Navigation" width="252"> |
+| <img src="images/mobile-home.png" alt="Mobile Startseite" width="253"> | <img src="images/mobile-login.png" alt="Login-Formular" width="253"> | <img src="images/mobile-menu.png" alt="Mobile Navigation" width="253"> |
